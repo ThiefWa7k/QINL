@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/BG_change/BG_change",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "清流",
+    "navigationBarTextStyle": "black"
+  }
+}

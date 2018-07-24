@@ -1,0 +1,39 @@
+<!--pages/BG_change/BG_change.wxml-->
+<view class='mod' style="background: -webkit-radial-gradient({{x}} {{y}},circle,#ffebf8, #ebf2ff)">
+  <view class='items_mod'>
+    <view class='content_row'>
+      <view class='pic'>
+        <!-- <image src='../../images/{{pic_no}}.jpg'>
+        </image> -->
+      </view>
+      <view class='pic_option'>
+        <view class='pics'>
+          <image src='../../images/pics_icon.png'></image>
+          <text>一张</text>
+        </view>
+        <view class='color'>
+          <image src='../../images/color_icon.png'></image>
+          <text>不限</text>
+        </view>
+        <view class='txt'>
+          <image src='../../images/text_icon.png'></image>
+          <text>标题、正文</text>
+        </view>
+      </view>
+    </view>
+    <view class='content_row hot_new'>
+      <text class='hot_t'>最热</text>
+      <text class='new_t'>最新</text>
+    </view>
+    <view class='content_row d_line'></view>
+    <scroll-view class='albums' scroll-x>
+      <block wx:for='{{album_items}}' wx:key="index">
+        <view class="albums_item {{selected==item.index?' albums_item_focus ':' '}}" bindtap='albumsClick' data-index='{{item.index}}'>
+          <image src='../../images/preview1.jpg'></image>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+</view>
+
+<!-- albums_item_linked-->
